@@ -19,7 +19,6 @@ async function getAnalytics(req, res) {
   const result = await URL.findOne({ shortID });
 
   return res.json({ totalClicks: result.visitHistory.length });
-  //   res.send(`hello${result}`);
 }
 
 async function redirectTotheURL(req, res) {
